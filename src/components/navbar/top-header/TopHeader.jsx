@@ -19,8 +19,8 @@ const TopHeader = () => {
         <form className="search__form">
           <select name="" id="">
             <option value="all"> All Categories</option>
-            <option value="moto"> Moto </option>
-            <option value="bag"> Bag</option>
+            <option value="moto"> Categories </option>
+            <option value="bag"> Categories</option>
           </select>
           <input placeholder="Search for items..." type="text" />
           <button>
@@ -32,29 +32,29 @@ const TopHeader = () => {
           <SlLocationPin />
           <select name="" id="">
             <option value="location">Your Location</option>
-            <option value="fergara">Fergana</option>
-            <option value="kakand">Kakand</option>
+            <option value="fergara">Tashkent</option>
+            <option value="kakand">Navoyi</option>
           </select>
         </div>
         <ul className="nav__link">
           <li>
             <Link onClick={scrollTop} to={"/compare"}>
               <img src={compare} alt="" />
-              <p className="count">3</p>
+              <p className="count">0</p>
               <span>Compare</span>
             </Link>
           </li>
           <li>
             <Link onClick={scrollTop} to={"wishlist"}>
               <IoMdHeartEmpty />
-              <p className="count">6</p>
+              <p className="count">0</p>
               <span>Wishlist</span>
             </Link>
           </li>
           <li>
             <Link onClick={scrollTop} to={"cart"}>
               <IoCartOutline />
-              <p className="count">2</p>
+              <p className="count">0</p>
               <span>Cart</span>
             </Link>
           </li>
@@ -62,6 +62,12 @@ const TopHeader = () => {
             <Link onClick={scrollTop} to={`/login`}>
               <FaRegUser />
               <span>Account</span>
+            </Link>
+          </li>
+          <li>
+            <Link onClick={scrollTop} to={`https://www.canva.com/design/DAGOFJxFsJc/PchTGJcskyjAY86VLMEeJQ/view?utm_content=DAGOFJxFsJc&utm_campaign=designshare&utm_medium=link&utm_source=editor`}>
+              <FaRegUser />
+              <a href="https://www.canva.com/design/DAGOFJxFsJc/PchTGJcskyjAY86VLMEeJQ/view?utm_content=DAGOFJxFsJc&utm_campaign=designshare&utm_medium=link&utm_source=editor"><span>CV</span></a>
             </Link>
           </li>
         </ul>
